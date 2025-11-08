@@ -9,7 +9,7 @@ venv/
 *.egg-info/
 
 # Data and models (tracked by DVC)
-/data/*
+#/data/*
 /models/*
 *.csv
 *.pkl

@@ -1,31 +1,22 @@
-﻿# Model parameters
 model:
-  type: 'RandomForestRegressor'
+  type: RandomForestRegressor
   random_state: 42
-
-# Data splitting
 data:
   test_size: 0.2
   random_state: 42
-
-# Feature engineering
 features:
   numerical:
-    - 'property_size'
-    - 'bedrooms'
-    - 'bathrooms'
+  - property_size
+  - bedrooms
+  - bathrooms
   categorical:
-    - 'location'
-    - 'property_type'
-
-# Hyperparameters for RandomForest
+  - location
+  - property_type
 hyperparameters:
   n_estimators: 100
   max_depth: 10
   min_samples_split: 5
   min_samples_leaf: 2
-
-# Training configuration
 training:
-  save_model_path: 'models/house_price_model.pkl'
-  metrics_path: 'metrics.json'
+  save_model_path: models/house_price_model.pkl
+  metrics_path: metrics.json
